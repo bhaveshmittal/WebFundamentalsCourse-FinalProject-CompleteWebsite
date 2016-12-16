@@ -1,0 +1,298 @@
+/* ============= General ===================*/
+
+/* Body */
+body {
+	font-family:  'Raleway', sans-serif, Arial, sans-serif;
+	margin: 0;
+	background-color: #b3b6bc;
+}
+
+/* Paragraphs */
+p {
+	margin: 0 0 5 0;
+	line-height: 1.1;
+}
+
+/* Navigations */
+nav {
+	text-transform: uppercase;
+}
+
+
+/* Unordered Lists */
+ul {
+	list-style-type: none;
+	padding: 0;
+
+}
+
+li {
+	display: inline-block;
+	margin-right: 10x;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+/* Anchors */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+/* ============= Headings ===================*/
+
+/* 1st Heading */
+h1 {
+	margin: 0;
+	width: 350px;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+
+/* 2nd Heading */
+h2 {
+	margin: 0;
+	padding: 10px 0 20px 0;
+	font-family: Bevan;
+}
+
+h3 {
+	margin: 0;
+	padding: 10px 0 0 0;
+	font-family: Bevan;
+}
+
+
+/* ============= Images ===================*/
+
+/* Image Main */
+img {
+	box-shadow: 5px 5px 20px grey;
+}
+
+/* Figure Captions */
+figcaption {
+	text-align: center;
+}
+
+
+
+/* ============= Forms ===================*/
+
+fieldset {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 600px;
+}
+
+
+/* ============= Header ===================*/
+
+/* Header */
+header {
+	color: #FFF;
+	background-color: #000;
+	height: 120px;
+	position: relative;
+}
+
+/* Main Navigation (Header) */
+nav#nav-header {
+	width: 600px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+/* Main Navigation (Header) li:hover  */
+nav#nav-header ul li:hover {
+	background-color: #2d2d2d;
+}
+
+/* Anchor's pseudo classes */
+nav#nav-header li a:visited {
+	color: lightgrey;
+}
+
+/* Sony Brand */
+p#sony {
+	font-size: 70%;
+	color: #b3b6bc;
+}
+
+/* Paragraphs inside h1*/
+h1 p {
+	line-height: 0;
+}
+
+
+/* ============= Main Containers ===================*/
+
+/* Main */
+main {
+	position: relative;
+/*	height: 500px;*/
+	min-height: 480px;
+	background-image: url("../images/background.png");
+}
+
+/* Main Container */
+.main-container {
+	width: 80%;
+
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+
+/* ============= Flexbox CSS ===================*/
+
+/* Flex Container */
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Flex Container */
+.flex-container-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* Flex Container - Direction: Column */
+.flex-direction-column {
+	display: flex;
+	flex-direction: row;
+}
+
+
+/* ============= Footer ===================*/
+
+/* Footer */
+footer {
+	background-color: #b3b6bc;
+	position: relative;
+	height: 100px;
+}
+
+/* Navigation - Footer */
+nav#nav-footer {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 70%;
+}
+
+/* Navigation - Social Media - Footer */
+nav#nav-social-media {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+
+/* Social Media Icons - Footer */
+nav#nav-social-media img {
+	box-shadow: none;
+	margin-left: 10px;
+}
+
+/* Copyright Content - Footer */
+p#copyright {
+	position: absolute;
+	left: 25px;
+	top: 60px;
+	text-align: left;
+	font-size: 70%;
+}
+
+/* Anchors Footer Navigation */
+nav#nav-footer a {
+	color: #2d2d2d;
+}
+
+nav#nav-footer li a:visited {
+	color: #3d3d3d;
+}
+
+
+
+/* ============= Home Page ===================*/
+
+/* Section - Main */
+section#intro-text {
+/*	width: 40%;*/
+/*	position: absolute;
+	top: 20px;
+	left: 50px;*/
+/*	height: 200px;*/
+	padding: 10px;
+	margin: 50px 0 50px 0;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+/* Figure - Main */
+figure#intro-product {
+/*	position: absolute;
+	right: 50px;*/
+}
+
+/* ============= Products Page ===================*/
+
+/* Gallery Section */
+section#img-gallery {
+	margin: 0 auto;
+/*	position: absolute;*/
+}
+
+/* Figures in Gallery Section */
+section#img-gallery figure {
+/*	float: left;*/
+}
+
+/* Product Information Section 
+/*section#about-product {
+	padding: 20px;
+	width: 70%;
+	margin: 0 auto;
+}*/
+
+/* ============= Reviews Page ===================*/
+
+main#main-reviews img {
+	box-shadow: none;
+}
+
+/* ============= Buy Now Page ===================*/
+
+div#form-container {
+	width: 550px;
+}
+
+div#promo {
+	background-color: #ef8645;
+	color: #FFF;
+	padding: 5px 10px 5px 10px;
+	margin: 10px;
+	text-align: center;
+	width: 80px;
+}
+
+div#free-shipping {
+	background-color: #000;
+	color: #FFF;
+	padding: 5px 10px 5px 10px;
+	margin: 10px;
+	text-align: center;
+	width: 80px;
+}
+
+/* ============= Support Page ===================*/
+
+div#phone-contact {
+	background-color: #2d2d2d;
+	color: #FFF;
+	width: 300px;
+	padding: 10px;
+}
