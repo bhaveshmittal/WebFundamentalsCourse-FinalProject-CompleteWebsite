@@ -13,6 +13,17 @@ p {
 	line-height: 1.1;
 }
 
+/* Quotes */
+.quote {
+	font-style: italic;
+}
+
+/* Span */
+span {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 /* Navigations */
 nav {
 	text-transform: uppercase;
@@ -84,7 +95,35 @@ figcaption {
 
 fieldset {
 	background-color: rgba(255, 255, 255, 0.5);
-	width: 600px;
+/*	width: 600px;*/
+}
+
+legend {
+	font-weight: bold;
+}
+
+button.btn-buy {
+	background-color: #F25529;
+	color: #FFF;
+	border: none;
+	padding: 15px 32px;
+	margin-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+button.btn-clear {
+	background-color: #b3b6bc;
+	color: #FFF;
+	border: none;
+	padding: 15px 32px;
+	margin-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
 
@@ -153,9 +192,23 @@ main {
 .flex-container {
 	display: flex;
 	justify-content: space-around;
+	align-items: flex-start;
 }
 
-/* Flex Container */
+/* Flex Container - Center*/
+.flex-container-center {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+/* Flex Container - Align: Center*/
+.flex-container-align-center {
+	align-items: center;
+}
+
+/* Flex Container - Content: End*/
 .flex-container-end {
 	display: flex;
 	justify-content: flex-end;
@@ -164,7 +217,7 @@ main {
 /* Flex Container - Direction: Column */
 .flex-direction-column {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 
@@ -236,7 +289,21 @@ section#intro-text {
 figure#intro-product {
 /*	position: absolute;
 	right: 50px;*/
+	margin: 50px;
 }
+
+/* Call-to-action - Buy Online Now*/
+div#cta-buy {
+	background-color: #ed8a1a;
+	color: #FFF;
+	padding: 5px;
+	margin: 5px;
+	width: 300px;
+	text-align: center;
+	align-self: flex-end;
+	order: -1;
+}
+
 
 /* ============= Products Page ===================*/
 
@@ -276,7 +343,7 @@ div#promo {
 	padding: 5px 10px 5px 10px;
 	margin: 10px;
 	text-align: center;
-	width: 80px;
+	width: 120px;
 }
 
 div#free-shipping {
@@ -285,7 +352,7 @@ div#free-shipping {
 	padding: 5px 10px 5px 10px;
 	margin: 10px;
 	text-align: center;
-	width: 80px;
+	width: 120px;
 }
 
 /* ============= Support Page ===================*/
@@ -295,4 +362,26 @@ div#phone-contact {
 	color: #FFF;
 	width: 300px;
 	padding: 10px;
+}
+
+/* ============= About Us Page ===================*/
+
+div#about-sony {
+	width: 550px;
+}
+
+aside {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 400px;
+	align-items: flex-start;
+	padding: 10px;
+}
+
+td {
+	width: 200px;
+	border: 2px solid #8d8d8d;
+}
+
+td:first-child {
+	font-weight: bold;
 }

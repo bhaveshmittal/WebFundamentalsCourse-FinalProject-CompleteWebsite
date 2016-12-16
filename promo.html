@@ -54,10 +54,11 @@
 		<!-- Begining of Main -->
 		<main id=main-aboutus>
 			<!-- Begining of Main Container -->
-			<div class="main-container" class="flex-container">
+			<div class="main-container">
 				<h2>Buy Now - Only $299 each!</h2>
-				<!-- Begining of order form Container. -->
 
+				<div class="flex-container-center">
+				<!-- Begining of order form Container. -->
 					<div id="form-container">
 						<form id="edit_payment_info" method="post" action="process-form.php">
 							<input type="hidden" name="form_sent" value="1" />
@@ -83,15 +84,15 @@
 								<legend>Billing Information</legend>
 								<div class="form-group">
 									<label for="fname">First Name</label>
-									<input type="text" name="fname" id="fname" required="required" size="50" maxlength="25" placeholder="Type your first name here" class="form-control" />
+									<input type="text" name="fname" id="fname" required="required" size="30" maxlength="25" placeholder="Type your first name here" class="form-control" />
 								</div>
 								<div class="form-group">
 									<label for="lname">Last Name</label>
-									<input type="text" name="lname" id="lname" required="required" size="50" maxlength="25" placeholder="Type your last name here" class="form-control" />
+									<input type="text" name="lname" id="lname" required="required" size="30" maxlength="25" placeholder="Type your last name here" class="form-control" />
 								</div>
 								<div class="form-group">
 									<label for="address">Address</label>
-									<input type="text" name="address" id="address" required="required" size="70" maxlength="100" placeholder="Type your address here" class="form-control" />
+									<input type="text" name="address" id="address" required="required" size="40" maxlength="100" placeholder="Type your address here" class="form-control" />
 								</div>
 								<div class="form-group">
 									<label for="phone">Phone Number</label>
@@ -167,20 +168,21 @@
 									</label>
 								</div>
 							</fieldset>
-							<button type="submit" class="btn btn-primary btn-lg">Buy Now</button>
-							<button type="reset" class="btn btn-default btn-lg">Clear Form</button>
+							<button type="submit" class="btn-buy">Buy Now</button>
+							<button type="reset" class="btn-clear">Clear Form</button>
 						</form>
-
-				</div> <!-- End of Form Container -->
-				<!-- Begining of Promo Div -->
-				<div id="promo">
-					<h3>Holiday Promo</h3>
-					<p>If you buy a Walkman until December 31st, you will also receive a surprise gift!</p>
-					<p>Don't miss out!</p>
-				</div>
-				<div id="free-shipping">
-					<p>Free shipping worldwide</p>
-				</div>
+					</div> <!-- End of Form Container -->
+					<!-- Begining of Promo Div -->
+					<div id="promo">
+						<h3>Holiday Promo</h3>
+						<p>If you buy a Walkman until December 31st, you will also receive a surprise gift!</p>
+						<p>Don't miss out!</p>
+					</div>
+					<!-- Begining of Free Shipping Div -->
+					<div id="free-shipping">
+						<p>Free shipping worldwide</p>
+					</div>
+				</div><!-- End of Flex Container -->
 			</div> <!-- End of Main Container -->
 		</main> <!-- End of Main -->
 
@@ -198,9 +200,9 @@
 				</ul>
 			</nav>
 			<nav id="nav-social-media">
-				<a href="#"><img src="images/fb_icon.png" alt="Facebook Icon" title="Facebook" /></a>
-				<a href="#"><img src="images/twitter_icon.png" alt="Twitter Icon" title="Twitter" /></a>
-				<a href="#"><img src="images/insta_icon.png" alt="Instagram Icon" title="Instagram" /></a>
+				<a href="#"><img src="images/fb_icon.png" alt="Facebook Icon" title="Facebook" width="32" height="32" /></a>
+				<a href="#"><img src="images/twitter_icon.png" alt="Twitter Icon" title="Twitter" width="32" height="32" /></a>
+				<a href="#"><img src="images/insta_icon.png" alt="Instagram Icon" title="Instagram" width="32" height="32" /></a>
 			</nav>
 		</footer>
 	</div> <!-- End of Main Container -->
