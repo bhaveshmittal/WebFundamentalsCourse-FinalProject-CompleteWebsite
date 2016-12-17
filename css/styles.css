@@ -103,6 +103,7 @@ figcaption {
 
 fieldset {
 	background-color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 20px;
 }
 
 legend {
@@ -148,7 +149,7 @@ header {
 nav#nav-header {
 	width: 600px;
 	position: absolute;
-	top: 30px;
+	top: 40px;
 	right: 20px;
 }
 
@@ -199,6 +200,10 @@ main {
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
+}
+
+.wrap {
+	flex-wrap: wrap;
 }
 
 /* Flex Container - Center*/
@@ -373,13 +378,14 @@ section#phone-contact {
 	color: #FFF;
 	width: 300px;
 	padding: 10px;
+	margin-left: 10px;
 }
 
 /* ============= About Us Page ===================*/
 
 /* Div - Information About Sony */
 div#about-sony {
-	width: 550px;
+	width: 70%;
 }
 
 /* Aside - Extra Information About Sony */
@@ -388,6 +394,8 @@ aside {
 	width: 400px;
 	align-items: flex-start;
 	padding: 10px;
+	box-shadow: 5px 5px 20px grey;
+	margin-left: 10px;
 }
 
 /* Aside Table*/
