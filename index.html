@@ -26,14 +26,15 @@
 </head>
 <!-- Begining of Body -->
 <body>
-<!-- Website Container -->
+<!-- Begining Page Container -->
 	<div id="container">
 	<!-- Begining of Header -->
 		<header>
-			<!-- Page Title -->
+			<!-- Logo -->
 			<h1>
-				<p><a href="index.html" title="TPS-L2 Walkman">TPS-L2 Walkman</a></p>
-				<p id="sony">SONY</p>
+				<a href="index.html" title="TPS-L2 Walkman">TPS-L2 Walkman</a>
+				<br>
+				<span id="sony">SONY</span>
 			</h1>
 			<!-- Main Navigation Bar -->
 			<nav id="nav-header">
@@ -47,19 +48,29 @@
 			</nav>
 		</header>
 		<!-- Begining of Main Container -->
-		<main class="flex-container-center flex-container-align-center">
-			<!-- Introduction Content -->
-			<section id="intro-text">
-				<h2>The people are always right.</h2>
-				<p>We granted your request: the TPS-L2, your personal stereo cassette player, is available again!</p>
-				<p>Do not depend on the internet connection to listen to your favorite songs!</p>
-			</section>
-			<!-- Product Image -->
-			<figure id="intro-product">
-				<img src="images/walkman-intro.jpg" alt="Walkman Picture" width="400" height="300" />
-			</figure>
-			<div id="cta-buy">
-				<p><a href="promo.html" title="Buy Now"><span>Holiday Sales:</span> Buy Online Now</a></p>
+		<main>
+			<div class="main-container">
+				<!-- Begining of row container -->
+				<div class="row">
+					<div class="col-8">
+						<!-- Introduction Content -->
+						<section id="intro-text">
+							<h2>The people are always right.</h2>
+							<p>We granted your request: the TPS-L2, your personal stereo cassette player, is available again!</p>
+							<p>Do not depend on the internet connection to listen to your favorite songs!</p>
+						</section>
+						<!-- Call-to-action -->
+						<div id="cta-buy">
+							<p><a href="promo.html" title="Buy Now"><span>Holiday Sales:</span> Buy Online Now</a></p>
+						</div>
+					</div>
+					<!-- Product Image -->
+					<div class="col-4">
+						<figure id="intro-product">
+							<img src="images/walkman-intro.jpg" alt="Walkman Picture" />
+						</figure>
+					</div>
+				</div><!-- End of row container -->
 			</div>
 		</main><!-- End of Main Container -->
 		<!-- Begining of Footer -->
@@ -72,6 +83,7 @@
 					<li><a href="#">Privacy Policy</a></li>
 				</ul>
 			</nav>
+			<!-- Social Media Navigation -->
 			<nav id="nav-social-media">
 				<a href="#"><img src="images/fb_icon.png" alt="Facebook Icon" title="Facebook" width="32" height="32" /></a>
 				<a href="#"><img src="images/twitter_icon.png" alt="Twitter Icon" title="Twitter" width="32" height="32" /></a>
@@ -79,5 +91,7 @@
 			</nav>
 		</footer>
 	</div> <!-- End of Main Container -->
+	<audio id="audio" src="cta-sound.ogg"></audio>
+	<script src="js/external.js"></script>
 </body>
 </html>

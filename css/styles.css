@@ -29,7 +29,6 @@ nav {
 	text-transform: uppercase;
 }
 
-
 /* Unordered Lists */
 ul {
 	list-style-type: none;
@@ -42,6 +41,7 @@ li {
 	margin-right: 10x;
 	margin-left: 10px;
 	padding: 5px;
+	transition: background-color 2s;
 }
 
 /* Anchors */
@@ -70,16 +70,25 @@ h2 {
 	font-family: Bevan;
 }
 
+/* 3rd Heading */
 h3 {
 	margin: 0;
 	padding: 10px 0 0 0;
 	font-family: Bevan;
 }
 
+/* 4th Heading */
+h4 {
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 
 /* ============= Images ===================*/
 
-/* Image Main */
+/* Images */
 img {
 	box-shadow: 5px 5px 20px grey;
 }
@@ -90,19 +99,17 @@ figcaption {
 }
 
 
-
 /* ============= Forms ===================*/
 
 fieldset {
 	background-color: rgba(255, 255, 255, 0.5);
-/*	width: 600px;*/
 }
 
 legend {
 	font-weight: bold;
 }
 
-button.btn-buy {
+button.btn-submit {
 	background-color: #F25529;
 	color: #FFF;
 	border: none;
@@ -148,6 +155,7 @@ nav#nav-header {
 /* Main Navigation (Header) li:hover  */
 nav#nav-header ul li:hover {
 	background-color: #2d2d2d;
+	border-bottom: 4px solid #ed8a1a;
 }
 
 /* Anchor's pseudo classes */
@@ -156,7 +164,7 @@ nav#nav-header li a:visited {
 }
 
 /* Sony Brand */
-p#sony {
+#sony {
 	font-size: 70%;
 	color: #b3b6bc;
 }
@@ -172,15 +180,13 @@ h1 p {
 /* Main */
 main {
 	position: relative;
-/*	height: 500px;*/
-	min-height: 480px;
-	background-image: url("../images/background.png");
+	min-height: 500px;
+	background: #FFF url("../images/background.png") repeat;
 }
 
 /* Main Container */
 .main-container {
 	width: 80%;
-
 	margin: 0 auto;
 	padding-bottom: 20px;
 }
@@ -273,23 +279,38 @@ nav#nav-footer li a:visited {
 
 /* ============= Home Page ===================*/
 
-/* Section - Main */
+/* Div - Introduction + Call-to-action */
+div.col-8 {
+	width: 66%;
+	float: left;
+}
+
+/* Div - Image */
+div.col-4 {
+	width: 33%;
+	float: left;
+}
+
+div.col-4 img {
+	max-width: 400px;
+	width: 100%;
+}
+
+/* Section - Introduction */
 section#intro-text {
-/*	width: 40%;*/
-/*	position: absolute;
-	top: 20px;
-	left: 50px;*/
-/*	height: 200px;*/
 	padding: 10px;
-	margin: 50px 0 50px 0;
+	margin: 50px 50px 50px 0;
 	background-color: rgba(255, 255, 255, .5);
+}
+
+/* Paragraphs inside Section - Introduction */
+section#intro-text p {
+	text-align: center;
 }
 
 /* Figure - Main */
 figure#intro-product {
-/*	position: absolute;
-	right: 50px;*/
-	margin: 50px;
+	margin: 50px 0;
 }
 
 /* Call-to-action - Buy Online Now*/
@@ -297,11 +318,9 @@ div#cta-buy {
 	background-color: #ed8a1a;
 	color: #FFF;
 	padding: 5px;
-	margin: 5px;
+	margin: 0 auto;
 	width: 300px;
 	text-align: center;
-	align-self: flex-end;
-	order: -1;
 }
 
 
@@ -310,54 +329,46 @@ div#cta-buy {
 /* Gallery Section */
 section#img-gallery {
 	margin: 0 auto;
-/*	position: absolute;*/
 }
-
-/* Figures in Gallery Section */
-section#img-gallery figure {
-/*	float: left;*/
-}
-
-/* Product Information Section 
-/*section#about-product {
-	padding: 20px;
-	width: 70%;
-	margin: 0 auto;
-}*/
 
 /* ============= Reviews Page ===================*/
 
+/* Images */
 main#main-reviews img {
 	box-shadow: none;
 }
 
 /* ============= Buy Now Page ===================*/
 
+/* Form Container */
 div#form-container {
-	width: 550px;
+	width: 60%;
 }
 
+/* Div - Holiday Promo */
 div#promo {
 	background-color: #ef8645;
 	color: #FFF;
 	padding: 5px 10px 5px 10px;
 	margin: 10px;
 	text-align: center;
-	width: 120px;
+	width: 15%;
 }
 
+/* Div - Free Shipping */
 div#free-shipping {
 	background-color: #000;
 	color: #FFF;
 	padding: 5px 10px 5px 10px;
 	margin: 10px;
 	text-align: center;
-	width: 120px;
+	width: 15%;
 }
 
 /* ============= Support Page ===================*/
 
-div#phone-contact {
+/* Section - Phone Support */
+section#phone-contact {
 	background-color: #2d2d2d;
 	color: #FFF;
 	width: 300px;
@@ -366,10 +377,12 @@ div#phone-contact {
 
 /* ============= About Us Page ===================*/
 
+/* Div - Information About Sony */
 div#about-sony {
 	width: 550px;
 }
 
+/* Aside - Extra Information About Sony */
 aside {
 	background-color: rgba(255, 255, 255, 0.5);
 	width: 400px;
@@ -377,6 +390,7 @@ aside {
 	padding: 10px;
 }
 
+/* Aside Table*/
 td {
 	width: 200px;
 	border: 2px solid #8d8d8d;
@@ -384,4 +398,11 @@ td {
 
 td:first-child {
 	font-weight: bold;
+}
+
+/* iFrame Map */
+iframe {
+	width: 300px;
+	height: 200px;
+	border: 0;
 }
